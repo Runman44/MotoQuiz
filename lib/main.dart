@@ -94,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
         question: "Je rijdt met een zijspan naast je motor. Het zijspan zit aan de rechterkant van de motor. Wanneer kan het zijspan boven de weg gaan zweven?",
         answers: [
           Answer(answer: "Als je een snelle bocht naar links rijdt"),
-          Answer(answer: "Als je een snelle bochtt naar rechts rijdt", isCorrect: true),
+          Answer(answer: "Als je een snelle bocht naar rechts rijdt", isCorrect: true),
           Answer(answer: "Als de motor zwaarder is dan het zijspan")
         ],
         description: "Als je met je motor met een rechtse zijspan een snelle bocht naar rechts maakt, zal de kracht in de bocht de bestuurder naar de buitenkant 'drukken', daarbij heeft het zijspan de neiging omhoog te komen. Bij een linkse bocht werkt het andersom en komt er meer druk op de zijspan."),
@@ -116,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Question(
         question: "Bij een politiecontrole blijkt dat je voertuig te veel geluid maakt. Wat kan de politie doen?",
         answers: [
-          Answer(answer: "Rijbewijs innemmen"),
+          Answer(answer: "Rijbewijs innemen"),
           Answer(answer: "Kentekenbewijs innemen", isCorrect: true),
           Answer(answer: "Rijbewijs en kentekenbewijs innemen")
         ],

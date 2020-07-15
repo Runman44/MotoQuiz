@@ -11,8 +11,8 @@ class AnswerButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RaisedButton(
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
+      child: Container(
+        margin: EdgeInsets.all(8.0),
         child: Text(answer.answer, textAlign: TextAlign.center,),
       ),
       color: Theme.of(context).accentColor,
