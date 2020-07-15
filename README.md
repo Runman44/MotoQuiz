@@ -4,4 +4,6 @@ A small quiz about motor vehicles created as assignment during Udemy course abou
 
 ## Demo
 
+This app is currently hosted at ![Firebase](https://motorquiz-8a3c2.web.app/#/)
+
 ![Demo](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
