@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:motorquiz/Result.dart';
+import 'package:motorquiz/result.dart';
 
 import 'quiz.dart';
 
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Motor Quiz'),
+      home: MyHomePage(title: 'MotoQuiz'),
     );
   }
 }
