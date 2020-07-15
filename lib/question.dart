@@ -10,27 +10,8 @@ class QuestionCard extends StatelessWidget {
     return Center(
       child: LayoutBuilder(
         builder: (context, constraints) {
-          if (constraints.maxWidth < 600) {
-            return Card(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Center(
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Text(
-                        questionText,
-                        style: TextStyle(fontSize: 16),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            );
-          } else
             return FractionallySizedBox(
-              widthFactor: 0.5,
+              widthFactor: constraints.maxWidth < 600 ? 1.0 : 0.5,
               child: Card(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -49,7 +30,7 @@ class QuestionCard extends StatelessWidget {
                 ),
               ),
             );
-          }
+          },
       ),
     );
   }
