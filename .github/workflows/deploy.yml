@@ -15,9 +15,17 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@master
 
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: 'beta'
+      - run: flutter pub get
+      - run: flutter config --enable-web
+      - run: flutter build web
+
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
-          args: deploy --only hosting --project motorquiz-8a3c2
+          args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          ROJECT_ID: motorquiz-8a3c2
